@@ -35,7 +35,7 @@ public class task2 {
                     temp = userArr[i];
                     userArr[i] = userArr[i+1];
                     userArr[i+1] = temp;
-                    logger.info("Еще одна иттерация");
+                    logger.info(Arrays.toString(userArr));
                 }
             }
         }

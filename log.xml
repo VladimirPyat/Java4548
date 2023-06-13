@@ -2,105 +2,105 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-06-13T21:02:24.517783200Z</date>
-  <millis>1686690144517</millis>
-  <nanos>783200</nanos>
+  <date>2023-06-13T21:08:15.098457Z</date>
+  <millis>1686690495098</millis>
+  <nanos>457000</nanos>
   <sequence>0</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 7, 6, 14, 16, 3, 11]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.598565Z</date>
-  <millis>1686690144598</millis>
-  <nanos>565000</nanos>
+  <date>2023-06-13T21:08:15.167272700Z</date>
+  <millis>1686690495167</millis>
+  <nanos>272700</nanos>
   <sequence>1</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 7, 14, 16, 3, 11]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.600560100Z</date>
-  <millis>1686690144600</millis>
-  <nanos>560100</nanos>
+  <date>2023-06-13T21:08:15.168270400Z</date>
+  <millis>1686690495168</millis>
+  <nanos>270400</nanos>
   <sequence>2</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 7, 14, 3, 16, 11]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.601557700Z</date>
-  <millis>1686690144601</millis>
-  <nanos>557700</nanos>
+  <date>2023-06-13T21:08:15.169268400Z</date>
+  <millis>1686690495169</millis>
+  <nanos>268400</nanos>
   <sequence>3</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 7, 14, 3, 11, 16]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.601557700Z</date>
-  <millis>1686690144601</millis>
-  <nanos>557700</nanos>
+  <date>2023-06-13T21:08:15.170265500Z</date>
+  <millis>1686690495170</millis>
+  <nanos>265500</nanos>
   <sequence>4</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 7, 3, 14, 11, 16]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.602555200Z</date>
-  <millis>1686690144602</millis>
-  <nanos>555200</nanos>
+  <date>2023-06-13T21:08:15.171262600Z</date>
+  <millis>1686690495171</millis>
+  <nanos>262600</nanos>
   <sequence>5</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 7, 3, 11, 14, 16]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.603552700Z</date>
-  <millis>1686690144603</millis>
-  <nanos>552700</nanos>
+  <date>2023-06-13T21:08:15.171262600Z</date>
+  <millis>1686690495171</millis>
+  <nanos>262600</nanos>
   <sequence>6</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 6, 3, 7, 11, 14, 16]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.604549300Z</date>
-  <millis>1686690144604</millis>
-  <nanos>549300</nanos>
+  <date>2023-06-13T21:08:15.172260500Z</date>
+  <millis>1686690495172</millis>
+  <nanos>260500</nanos>
   <sequence>7</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
   <class>homework2.task2</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Еще одна иттерация</message>
+  <message>[2, 3, 6, 7, 11, 14, 16]</message>
 </record>
 <record>
-  <date>2023-06-13T21:02:24.605548Z</date>
-  <millis>1686690144605</millis>
-  <nanos>548000</nanos>
+  <date>2023-06-13T21:08:15.173257800Z</date>
+  <millis>1686690495173</millis>
+  <nanos>257800</nanos>
   <sequence>8</sequence>
   <logger>homework2.task2</logger>
   <level>INFO</level>
