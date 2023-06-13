@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-06-13T21:02:24.517783200Z</date>
+  <millis>1686690144517</millis>
+  <nanos>783200</nanos>
+  <sequence>0</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.598565Z</date>
+  <millis>1686690144598</millis>
+  <nanos>565000</nanos>
+  <sequence>1</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.600560100Z</date>
+  <millis>1686690144600</millis>
+  <nanos>560100</nanos>
+  <sequence>2</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.601557700Z</date>
+  <millis>1686690144601</millis>
+  <nanos>557700</nanos>
+  <sequence>3</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.601557700Z</date>
+  <millis>1686690144601</millis>
+  <nanos>557700</nanos>
+  <sequence>4</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.602555200Z</date>
+  <millis>1686690144602</millis>
+  <nanos>555200</nanos>
+  <sequence>5</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.603552700Z</date>
+  <millis>1686690144603</millis>
+  <nanos>552700</nanos>
+  <sequence>6</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.604549300Z</date>
+  <millis>1686690144604</millis>
+  <nanos>549300</nanos>
+  <sequence>7</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Еще одна иттерация</message>
+</record>
+<record>
+  <date>2023-06-13T21:02:24.605548Z</date>
+  <millis>1686690144605</millis>
+  <nanos>548000</nanos>
+  <sequence>8</sequence>
+  <logger>homework2.task2</logger>
+  <level>INFO</level>
+  <class>homework2.task2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Сортировка завершена</message>
+</record>
+</log>
