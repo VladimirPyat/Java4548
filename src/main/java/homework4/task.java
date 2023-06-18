@@ -1,6 +1,7 @@
 package homework4;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -18,11 +19,7 @@ public class task {
             System.out.println("Введите команду: ");
             String command = scan.nextLine();
 
-            if (command == "exit") {
-                System.out.println("Завершение программы");
-                progRun = false;
-                break;
-            }
+
             switch (command)   {
                 case "exit": {
                     System.out.println("Завершение программы");
@@ -31,10 +28,7 @@ public class task {
                 }
                 case "print": {
                     System.out.println("PRINT");
-                    for (String element : userArray) {
-                        System.out.print(element+"\t");
-                    }
-                    System.out.println("");
+                    System.out.println(userArray);
                     break;
                 }
                 case "revert": {
