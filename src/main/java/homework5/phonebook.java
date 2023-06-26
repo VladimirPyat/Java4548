@@ -11,7 +11,7 @@ public class phonebook {
             System.out.println("Введите команду (add/get/remove/list/exit): ");
             String commandline = scan.nextLine().toLowerCase();
             String [] command = commandline.split(" ");
-            System.out.println(Arrays.stream(command).toList());
+            //System.out.println(Arrays.stream(command).toList());
 
 
             switch (command [0])   {
