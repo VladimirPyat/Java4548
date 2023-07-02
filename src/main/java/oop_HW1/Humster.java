@@ -36,16 +36,12 @@ public class Humster extends Zoo {
         return sound;
     }
 
-    private boolean isSleeping() {
+    private static int selfSleep = 5;
 
-        int r = rand.nextInt(1,5);
-        boolean result = r == 1 ? true : false;
-        return result;
-    }
 
 
     public  void makeCall(String name) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
 
             System.out.printf("%s не реагирует", this.name); System.out.println();
         }
@@ -54,7 +50,7 @@ public class Humster extends Zoo {
         }
     }
     public  void giveFood(String food) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             if (Arrays.asList(prefFood).contains(food)) {
                 System.out.printf("%s ест %s", this.name, food); System.out.println();
             } else {
@@ -67,7 +63,7 @@ public class Humster extends Zoo {
     }
 
     public  void makePet() {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             System.out.printf("%s радостно пищит", this.name); System.out.println();
         }
         else {

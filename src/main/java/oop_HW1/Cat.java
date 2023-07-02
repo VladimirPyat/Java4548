@@ -36,16 +36,11 @@ public class Cat extends Zoo {
         return sound;
     }
 
-    private boolean isSleeping() {
-
-        int r = rand.nextInt(1,7);
-        boolean result = r == 1 ? true : false;
-        return result;
-    }
+    private static int selfSleep = 7;
 
 
     public  void makeCall(String name) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             int r = rand.nextInt(1,5);
             if (r == 1) {
                 System.out.printf("%s бежит и трется об ноги", this.name); System.out.println();
@@ -62,7 +57,7 @@ public class Cat extends Zoo {
         }
     }
     public  void giveFood(String food) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             if (Arrays.asList(prefFood).contains(food)) {
                 System.out.printf("%s ест %s", this.name, food); System.out.println();
             } else {
@@ -75,7 +70,7 @@ public class Cat extends Zoo {
     }
 
     public  void makePet() {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             int r = rand.nextInt(1,4);
             if (r == 2) {
                 System.out.printf("%s шипит и пытается поцарапать", this.name); System.out.println();

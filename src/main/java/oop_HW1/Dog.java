@@ -19,7 +19,8 @@ public class Dog extends Zoo {
     private static int maxage = 15;
     private static String sound = "гав-гав";
     private static String[] prefFood =  {"сосиска", "косточка", "собачий корм"};
-    private static Random rand = new Random();
+    private static int selfSleep = 7;   //чем больше - тем ниже вероятность сна
+
 
     public Dog(int id, String name, int age, boolean asleep) {
         super(id, name, age, asleep);
@@ -36,16 +37,11 @@ public class Dog extends Zoo {
         return sound;
     }
 
-    private boolean isSleeping() {
 
-        int r = rand.nextInt(1,7);
-        boolean result = r == 1 ? true : false;
-        return result;
-    }
 
 
     public  void makeCall(String name) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             if (name == this.name) {
                 System.out.printf("%s бежит и виляет хвостом, %s", this.name, Dog.getSound()); System.out.println();
             }
@@ -58,7 +54,7 @@ public class Dog extends Zoo {
         }
     }
     public  void giveFood(String food) {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             if (Arrays.asList(prefFood).contains(food)) {
                 System.out.printf("%s ест %s", this.name, food); System.out.println();
             }
@@ -72,7 +68,7 @@ public class Dog extends Zoo {
     }
 
     public  void makePet() {
-        if (!isSleeping()) {
+        if (!isSleeping(selfSleep)) {
             System.out.printf("%s радостно урчит и виляет хвостом", this.name); System.out.println();
         }
         else {
