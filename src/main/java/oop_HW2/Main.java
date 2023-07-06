@@ -1,9 +1,5 @@
 package oop_HW2;
 
-import oop_HW1.Cat;
-import oop_HW1.Dog;
-import oop_HW1.Humster;
-import oop_HW1.Zoo;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -14,11 +10,11 @@ public class Main {
         Random rand = new Random();
         Render render = new Render();
 
-        Substance.Building building1 = new Substance.Building(200);
+        Building building1 = new Building(200);
         building1.setCurrentHealth(rand.nextInt(201));
         render.showIndicator(building1);
 
-        Substance.Hero hero1 = new Substance.Hero(150, 100);
+        Hero hero1 = new Hero(150, 100);
         hero1.setCurrentHealth(rand.nextInt(151));
         hero1.setCurrentMana(rand.nextInt(101));
         render.showIndicator(hero1);
@@ -33,7 +29,7 @@ public class Main {
 
          */
         public void showIndicator(Substance substance) {
-            System.out.println("\u001B[0m"+substance.getClass()+" id: "+substance.getId());
+            System.out.println("\u001B[0m"+substance.getClass().toString().substring(substance.getClass().toString().indexOf(".")+1)+" id: "+substance.getId());
             if (substance instanceof HasHealth) {
                 int max=((HasHealth) substance).getMaxHealth();
                 int curr=((HasHealth) substance).getCurrentHealth();
@@ -47,13 +43,11 @@ public class Main {
                 System.out.printf("\u001B[0m"+"Максимальная/текущая мана: %s / %s ", max, curr);
                 grapfIndicator (max, curr);
             }
-
         }
 
         public void grapfIndicator (int max, int curr) {
 
             final String ANSI_RESET = "\u001B[0m";
-
             final String ANSI_RED = "\u001B[31m";
             final String ANSI_GREEN = "\u001B[32m";
             final String ANSI_YELLOW = "\u001B[33m";
