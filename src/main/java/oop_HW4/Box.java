@@ -21,7 +21,7 @@ public class Box <T extends Fruit> implements Iterable <T> {
      }
 
      public void moveTo(Box<? super T> targetBox ) {
-          this.fruits.forEach(fruit -> targetBox.add((T)fruit));
+          this.fruits.forEach(targetBox::add);
           this.fruits.clear();
 
      }
