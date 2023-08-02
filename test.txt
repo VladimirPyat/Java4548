@@ -1,7 +1,0 @@
-.git
-.idea
-file.txt
-pom.xml
-src
-target
-test.txt
