@@ -1,7 +1,6 @@
 package oop_HW1;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,8 +15,7 @@ import java.util.Random;
 
 */
 
-@Data
-@AllArgsConstructor
+
 public abstract class Zoo {
     int id;
     protected String name;
@@ -54,6 +52,7 @@ public abstract class Zoo {
     }
 
 
-
-
+    public String getName() {
+        return name;
+    }
 }
