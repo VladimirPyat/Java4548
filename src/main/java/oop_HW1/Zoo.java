@@ -1,6 +1,7 @@
 package oop_HW1;
 
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <excludeFromCompile>
-      <file url="file://$PROJECT_DIR$/oop_HW5/models/User.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/controllers/GroupController.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/controllers/UserController.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/controllers/StudentController.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/controllers/TeacherController.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/Main.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/models/Student.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/models/Teacher.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/repositories/AllUserRepository.java" />
-      <file url="file://$PROJECT_DIR$/oop_HW5/services/GroupService.java" />
-    </excludeFromCompile>
+  
   </component>
 </project>

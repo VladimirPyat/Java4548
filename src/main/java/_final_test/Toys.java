@@ -1,9 +1,6 @@
 package _final_test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Toys {
     /**
@@ -21,7 +18,7 @@ public class Toys {
     static {
         toyIdAndName.put(1, "Car");
         toyIdAndName.put(2, "Doll");
-        toyIdAndName.put(3, "Car");
+        toyIdAndName.put(3, "DesignKit");
         toyIdAndName.put(4, "Railroad");
     }
 
@@ -35,6 +32,9 @@ public class Toys {
         this.name = toyName + Collections.frequency(copyCounter, subclassId);
 
     }
+    static Set<Integer> getIdSet() {
+        return toyIdAndName.keySet();
+    }
 
     public int getSubclassId() {
         return subclassId;
@@ -42,6 +42,14 @@ public class Toys {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "Id=" + subclassId +
+                ", " + name +
+                '}';
     }
 }
 
