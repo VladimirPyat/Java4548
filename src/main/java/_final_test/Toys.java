@@ -4,36 +4,26 @@ import java.util.*;
 
 public class Toys {
     /**
-     * В этом классе задан список возможных игрушек
-     * Задаем названия подклассов (Машинка, Кукла и т.п.) и id подкласса.
+     * Этот класс описывает саму игрушку. Содержит поля subclassId (подкласс), name (название), randomWeight (частота выпадения в лотерее)
+     * randomWeight используется только при создании шаблона игрушки в классе ToyTemplate
      *
-     * для подсчета созданных экземпляров есть список copyCounter. при создании экземпляра в него добавляется значение subclassId
-     * Экземпляры создаются по id подкласса, при этом имя задается автоматически как имя подкласса + число экземпляров в подклассе
      */
     private static ArrayList <Integer> copyCounter = new ArrayList<>();
-    private static Map <Integer, String> toyIdAndName = new HashMap<>();
     private int subclassId;
+    private int randomWeight;
     private String name;
 
-    static {
-        toyIdAndName.put(1, "Car");
-        toyIdAndName.put(2, "Doll");
-        toyIdAndName.put(3, "DesignKit");
-        toyIdAndName.put(4, "Railroad");
+    //этот конструктор используем для создания шаблонов
+    public Toys(int subclassId, int randomWeight, String name) {
+        this.subclassId = subclassId;
+        this.randomWeight = randomWeight;
+        this.name = name;
     }
-
-    public Toys(int subclassId) {
-        String toyName = toyIdAndName.getOrDefault(subclassId, null);
-        if (toyName == null) {
-            throw new IllegalArgumentException("Не найдена игрушка с id"+subclassId);
-        }
+    //этот конструктор используем для генерации на основе шаблона
+    public Toys(int subclassId, String name) {
         this.subclassId = subclassId;
         copyCounter.add(subclassId);
-        this.name = toyName + Collections.frequency(copyCounter, subclassId);
-
-    }
-    static Set<Integer> getIdSet() {
-        return toyIdAndName.keySet();
+        this.name = name;
     }
 
     public int getSubclassId() {
@@ -42,6 +32,14 @@ public class Toys {
 
     public String getName() {
         return name;
+    }
+
+    public int getRandomWeight() {
+        return randomWeight;
+    }
+
+    public static int getCopycounter(int subclassId) {
+        return Collections.frequency(copyCounter, subclassId);
     }
 
     @Override

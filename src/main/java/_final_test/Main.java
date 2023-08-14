@@ -2,10 +2,23 @@ package _final_test;
 
 public class Main {
     public static void main(String[] args) {
-        Toys toy1 = new Toys(1);
-        Toys toy2 = new Toys(2);
-        Toys toy3 = new Toys(1);
+        ToyTemplate toyTemplate = ToyTemplate.getInstance();
+        toyTemplate.add(6, "Doll");
+        toyTemplate.add(5, "Car");
+        toyTemplate.add(3, "DesignKit");
+        toyTemplate.add(1, "Railway");
 
+        ToysRoulette roulette = new ToysRoulette();
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
+        System.out.println("Генерация случайного id = "+roulette.getRandomId());
 
     }
 }
