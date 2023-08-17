@@ -2,12 +2,13 @@ package _final_test;
 
 import java.util.*;
 
+/**
+ * Этот класс описывает саму игрушку. Содержит поля subclassId (подкласс), name (название), randomWeight (частота выпадения в лотерее)
+ * randomWeight используется только при создании шаблона игрушки в классе ToyTemplate
+ *
+ */
 public class Toys {
-    /**
-     * Этот класс описывает саму игрушку. Содержит поля subclassId (подкласс), name (название), randomWeight (частота выпадения в лотерее)
-     * randomWeight используется только при создании шаблона игрушки в классе ToyTemplate
-     *
-     */
+
     private static ArrayList <Integer> copyCounter = new ArrayList<>();
     private int subclassId;
     private int randomWeight;
@@ -40,6 +41,14 @@ public class Toys {
 
     public static int getCopycounter(int subclassId) {
         return Collections.frequency(copyCounter, subclassId);
+    }
+
+    public void setRandomWeight(int randomWeight) {
+        this.randomWeight = randomWeight;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

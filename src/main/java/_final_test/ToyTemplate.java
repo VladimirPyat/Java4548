@@ -2,12 +2,13 @@ package _final_test;
 
 import java.util.ArrayList;
 
+/**
+ * Данный класс используется как шаблон для создания игрушек.
+ * randomWeight используется в ToyRoulette для создания генератора случайных значений id сообразно весам
+ * к name при генерации экземпляров на основе шаблона добавляется значение счетчика экземпляров
+ */
 public class ToyTemplate {
-    /**
-     * Данный класс используется как шаблон для создания игрушек.
-     * randomWeight используется в ToyRoulette для создания генератора случайных значений id сообразно весам
-     * к name при генерации экземпляров на основе шаблона добавляется значение счетчика экземпляров
-     */
+
     private ArrayList<Toys> toyTemplatesList;
     private static ToyTemplate instance;
 
@@ -27,7 +28,7 @@ public class ToyTemplate {
         int subclassId = this.toyTemplatesList.size()+1;
         Toys newToy = new Toys (subclassId, randomWeight, name);
         this.toyTemplatesList.add(newToy);
-        ToysRoulette.addToRandomizeList(subclassId, randomWeight);
+        ToyRoulette.addToRandomizeList(subclassId, randomWeight);
         System.out.printf("Создан шаблон id%d '%s', частота выпадения = %d\n", subclassId, name, randomWeight);
 
     }
@@ -41,10 +42,17 @@ public class ToyTemplate {
         throw new IllegalArgumentException("Не найдена игрушка с id"+id);
     }
 
-    public Toys generate (int id) {
+    public Toys generate (int id) {         //генерация игрушки по шаблону
         String name = this.getTemplate(id).getName()+Toys.getCopycounter(id);
         Toys newToy = new Toys(id, name);
         return newToy;
+    }
+
+    public void setRandomWeight (int id, int newRandomWeight) {
+        ToyRoulette.delFromRandomizeList(id);
+        getTemplate(id).setRandomWeight(newRandomWeight);
+        ToyRoulette.addToRandomizeList(id, newRandomWeight);
+        System.out.printf("Изменен шаблон id%d , частота выпадения = %d\n", id, newRandomWeight);
     }
 
 
