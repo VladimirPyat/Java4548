@@ -1,12 +1,14 @@
 package _final_test;
 
-
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Set;
 
 /**
- *
+ * Данный класс используется для розыгрыша призов (игрушек)
+ * Есть метод генерации случайного номера лотерейного билета и случайного приза
+ * Есть метод получения приза по номеру билета
+ * Оба метода делают записи в файл при помощи класса FileUtil
  */
 public class ToyDistribution {
 
