@@ -48,11 +48,12 @@ public class ToyTemplate {
         return newToy;
     }
 
-    public void setRandomWeight (int id, int newRandomWeight) {
+    public void changeTemplate (int id, String newName, int newRandomWeight) {
         ToyRoulette.delFromRandomizeList(id);
+        getTemplate(id).setName(newName);
         getTemplate(id).setRandomWeight(newRandomWeight);
         ToyRoulette.addToRandomizeList(id, newRandomWeight);
-        System.out.printf("Изменен шаблон id%d , частота выпадения = %d\n", id, newRandomWeight);
+        System.out.printf("Изменен шаблон id%d '%s', частота выпадения = %d\n", id, newName, newRandomWeight);
     }
 
 
@@ -64,5 +65,11 @@ public class ToyTemplate {
         return idList;
     }
 
+    @Override
+    public String toString() {
+        return  '{'+
+                "Список шаблонов" + toyTemplatesList +
+                '}';
+    }
 }
 
